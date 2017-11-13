@@ -15,6 +15,5 @@ while (True):
 	battery_status_file.close()
 
 	if (battery_capacity == "100\n" and battery_status == "Charging\n"):
-		print(battery_capacity)
 		os.system("aplay beep.wav")
 		time.sleep(15*60)
